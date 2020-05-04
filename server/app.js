@@ -17,16 +17,6 @@ var connection = mysql.createConnection({
   database: 'mysqldb'
 });
 
-// Near the other imports
-var mysql = require('mysql');
-// Replace with your configurations
-var connection = mysql.createConnection({
-  host: 'localhost',
-  port: '3357',
-  user: 'mysql',
-  password: 'mysql123',
-  database: 'mysqldb'
-});
 connection.connect(function(error) {
   if (error) {
     console.error('There was a problem connecting: ' + error.stack);
